@@ -1,0 +1,627 @@
+.container_min {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.container_max {
+  width: 100%;
+  max-width: 1580px;
+  margin: 0 auto;
+}
+
+.gap_test {
+  gap: 30px;
+  display: flex;
+}
+
+.logo {
+  font-family: "Forum", serif;
+  font-size: 40px;
+  color: #3B3B7A;
+  text-decoration: none;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.header_LVL1 {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.header_LVL1 a {
+  color: #3B3B7A;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  display: flex;
+  white-space: nowrap;
+}
+
+.slect {
+  border: none;
+}
+
+.right_header {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+  margin-left: 45%;
+}
+
+.right_header button {
+  color: #3B3B7A;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  margin-left: 25px;
+}
+
+.backgroundheader_lvl2 {
+  color: #0845E1;
+  gap: 25px;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 55px;
+  background-color: #EBF0FF;
+  border-radius: 20px;
+  width: 97%;
+  height: 50px;
+}
+
+.backgroundheader_lvl2 img {
+  margin-right: 5px;
+}
+
+.header_up {
+  display: flex;
+}
+
+.header_bottom {
+  display: flex;
+  gap: 50px;
+}
+
+.stick {
+  font-family: "Onest", sans-serif;
+  margin-bottom: 30px;
+  padding-right: 50px;
+  border-right: 1px solid;
+  border-color: #B8C4FF;
+}
+
+.header_bottom a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1D2035;
+  margin-left: 75px;
+}
+
+.imgbanner {
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  color: #0845E1;
+  max-width: 1580px;
+  max-height: 450px;
+  background-image: url(/img/banner.jpg);
+  padding: 30px 30px;
+  margin-top: 25px;
+  border-radius: 20px;
+}
+
+.imgbanner button {
+  margin-top: 35px;
+}
+
+.buttonbun {
+  padding: 10px 15px;
+  font-family: "Onest", sans-serif;
+  size: 25px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  background-color: #0845E1;
+  cursor: pointer;
+}
+
+.infoicon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1475px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.number {
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin: auto;
+}
+
+.undnumber {
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: auto;
+}
+
+.threablock {
+  display: flex;
+  max-width: 1480px;
+  margin: auto;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.block {
+  border-radius: 20px;
+  width: 480px;
+  height: 280px;
+  background-color: #D4EBFF;
+}
+
+.headh {
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: #1147D0;
+  text-align: center;
+}
+
+.block button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 5px 35px;
+  border: none;
+  border-radius: 20px;
+  width: 447px;
+  margin: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.block button p:first-child {
+  margin: auto;
+  font-family: "Onest", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+
+}
+
+.block button p:last-child {
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #0845E1;
+  display: flex;
+  margin: 0;
+}
+
+.docbunup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.docbunup p {
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #1147D0;
+}
+
+.docbunup button {
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #0845E1;
+  background-color: white;
+  border-color: #0845E1;
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.docbun {
+  display: flex;
+}
+
+.bun {
+  border: 1px solid #C5CAE9;
+  width: 280px;
+  height: 330px;
+}
+
+.docbun div {
+  border-radius: 20px;
+  margin: auto;
+}
+
+.headbun {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 15px 15px;
+}
+
+.headbun p {
+  margin: 0;
+}
+
+.mainbun {
+  text-align: center;
+}
+
+.docname {
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: auto;
+}
+
+.profdoc {
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #3562FF;
+}
+
+.docworck {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #3B3B7A;
+}
+
+.floater {
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.floater button {
+  background-color: #838FFF;
+  border-color: #838FFF;
+  border-radius: 20px;
+  color: white;
+  max-width: 135px;
+  max-height: 38px;
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 22px;
+}
+
+.floater p {
+  margin: 1px;
+}
+
+.conpr p:last-child {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.conpr p:first-child {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.infapp {
+  background-image: url(/img/bunapp.png);
+  text-align: center;
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: #0845E1;
+  padding: 18px;
+  margin-top: 30px;
+}
+
+.vote {
+  background-image: url(/img/bacvot.png);
+  border-radius: 20px;
+  margin: auto;
+  max-height: 643px;
+}
+
+.headp {
+  margin: 50px;
+  padding-top: 40px;
+  text-align: center;
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #1147D0;
+}
+
+.cvote {
+  display: flex;
+}
+
+.blockvoit {
+  flex-direction: column;
+  margin: auto;
+}
+
+.voteimg img {
+  border-radius: 20px;
+}
+
+.votecomdoc {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.infvoitdoc p {
+  margin: auto;
+}
+
+.infvoitdoc p:first-child {
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #22272F;
+}
+
+.infvoitdoc p:last-child {
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #3562FF;
+}
+
+.gradedoc {
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #22272F;
+}
+
+.infvoitdocgradedoc {
+  flex-direction: column;
+}
+
+.grade button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.grade {
+  margin-left: 145px;
+}
+
+.prodbun {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prodbun div {
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.product {
+  font-family: Onest;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+.prodinf {
+  font-family: Onest;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #3B3B7A;
+}
+
+.prfloater {
+  text-align: center;
+}
+
+.prodpr {
+  font-family: Onest;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.prbun {
+  border: 1px solid #C5CAE9;
+  width: 258px;
+  height: 315px;
+  margin: 10px;
+}
+
+.shheadbun {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 5px
+}
+
+.imgbanner2 {
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  color: #0845E1;
+  max-width: 1580px;
+  max-height: 450px;
+  background-image: url(/img/bunner2.png);
+  padding: 15px 50px;
+  margin-top: 25px;
+  border-radius: 20px;
+}
+
+.brendbunup {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brendbunup p:first-child {
+  margin-bottom: 0;
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #1147D0;
+}
+
+.brendbunup p:last-child {
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #434E76;
+}
+
+.brendbun {
+  display: flex;
+}
+
+.brebun {
+  margin: auto;
+  border: 1px solid #C5CAE9;
+  width: 280px;
+  height: 180px;
+  border-radius: 20px;
+}
+
+.imgbanner3 {
+  padding: 60px 50px;
+  border: 1px solid #C5CAE9;
+  border-radius: 15px;
+  background-image: url(/img/bunner3.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.paccord {
+  margin: 0;
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #1147D0;
+}
+
+.accordeon {
+  width: 980px;
+}
+
+.floaterup {
+  display: flex;
+  justify-content: end;
+  border-bottom: 1px solid #D0BDF8;
+  margin-top: 100px;
+  padding: 80px 200px;
+  background-color: #F5F4FA;
+}
+
+.perentshref {
+  text-align: start
+}
+
+.textfl p {
+  font-family: "Forum", serif;
+  font-size: 45px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #3B3B7A;
+  margin-bottom: 50px;
+}
+
+.floaterapp {
+  margin-top: 20px;
+  width: 705px;
+  margin-right: 134px;
+}
+
+.perentshref {
+  display: flex;
+  align-items: center;
+}
+
+.hrefset {
+  margin: 50px;
+  margin-top: 0;
+}
+
+
+.perhref {
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.6px;
+  letter-spacing: 0%;
+  color: #3B3B7A;
+  text-decoration: none;
+}
+
+.chhref {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #3B3B7A;
+  text-decoration: none;
+}
+
+.blockhr {
+  margin-bottom: 20px;
+}
+
+.blockhrch {
+  margin-bottom: 15px;
+}
+
+.floaterbotton {
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #3B3B7A;
+}
+
+.floaterbotton {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5F4FA;
+  padding: 20px 200px;
+}
+.contfloatertxt {
+  display: flex;
+}
+.floatertxt{
+ margin-right: 20px;
+}
