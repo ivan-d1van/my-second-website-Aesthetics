@@ -1,0 +1,78 @@
+#side-checkbox {
+  display: none;
+}
+.side-panel {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: -360px;
+  background: #EBF0FF;
+  transition: all 0.5s;   
+  width: 320px;
+  height: 100vh;
+  color: #3B3B7A;
+  padding: 40px 20px;
+}
+.side-panel a {
+  display: flex;
+  align-items: end;
+  justify-content: first baseline;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #3B3B7A;
+  text-decoration: none;
+}
+.side-title {
+  display: flex;
+  align-items: end;
+  justify-content: first baseline;
+  vertical-align: middle;
+  font-size: 40px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3B3B7A;
+}
+/* Оформление кнопки на странице */
+.side-button-1-wr {/* Контейнер для кнопки, чтобы было удобнее ее разместить */
+  margin-left: 3%; 
+}
+.side-button-1 {
+  display: inline-block;
+}
+.side-button-1 .side-b {
+  color: #0845E1;
+  text-transform: uppercase; 
+  font-family: 'Roboto', Тahoma, sans-serif;
+  cursor: pointer; 
+}
+/* Переключатели кнопки 1 */
+.side-button-1 .side-close {
+  display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+  display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+  display: block;
+}
+#side-checkbox:checked + .side-panel {
+  left: 0;
+}
+/* Оформление кнопки на панеле */
+.side-button-2 {
+  font-size: 30px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  transform: rotate(45deg);
+  color: #133a58;    
+  transition: all 280ms ease-in-out;    
+}
+.side-button-2:hover {
+  transform: rotate(45deg) scale(1.1);    
+  color: #000000;
+}
