@@ -109,7 +109,7 @@
   color: #0845E1;
   max-width: 1580px;
   max-height: 450px;
-  background-image: url(/img/banner.jpg);
+  background-image: url(img/banner.jpg);
   padding: 30px 30px;
   margin-top: 25px;
   border-radius: 20px;
@@ -322,7 +322,7 @@
 }
 
 .infapp {
-  background-image: url(/img/bunapp.png);
+  background-image: url(img/bunapp.png);
   text-align: center;
   font-family: "Onest", sans-serif;
   font-weight: 300;
@@ -333,7 +333,7 @@
 }
 
 .vote {
-  background-image: url(/img/bacvot.png);
+  background-image: url(img/bacvot.png);
   border-radius: 20px;
   margin: auto;
   max-height: 643px;
@@ -470,7 +470,7 @@
   color: #0845E1;
   max-width: 1580px;
   max-height: 450px;
-  background-image: url(/img/bunner2.png);
+  background-image: url(img/bunner2.png);
   padding: 15px 50px;
   margin-top: 25px;
   border-radius: 20px;
@@ -516,7 +516,7 @@
   padding: 60px 50px;
   border: 1px solid #C5CAE9;
   border-radius: 15px;
-  background-image: url(/img/bunner3.png);
+  background-image: url(img/bunner3.png);
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
