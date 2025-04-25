@@ -1,0 +1,97 @@
+/* Основные стили для аккордеона */
+.details {
+    position: relative;
+    margin: 0 auto 10px;
+    background-color: white;
+    border: 1px solid #C3ACF3;
+    border-radius: 15px;
+    width: 980px;
+    overflow: hidden;
+}
+
+/* Стили для заголовка */
+.details__title {
+    position: relative;
+    padding: 20px 60px 20px 24px;
+    margin: 0;
+    font-family: "Onest", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #434E76;
+    cursor: pointer;
+    list-style: none;
+}
+
+/* Убираем стандартный маркер */
+.details__title::-webkit-details-marker {
+    display: none;
+}
+
+/* Стили для содержимого */
+.details__content {
+    padding: 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 
+        max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        padding 0.3s ease;
+    font-family: "Onest", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #434E76;
+}
+
+/* Открытое состояние */
+.details[open] .details__content {
+    max-height: 1000px; /* Достаточно большое значение */
+    padding-bottom: 20px;
+    transition: 
+        max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        padding 0.3s ease;
+}
+
+/* Анимация текста внутри */
+.details__content-inner {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 
+        opacity 0.4s ease 0.1s,
+        transform 0.4s ease 0.1s;
+}
+
+.details[open] .details__content-inner {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Иконка плюс/минус */
+.details__title::before,
+.details__title::after {
+    content: "";
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    width: 30px;
+    height: 1px;
+    background-color: #425995;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.details__title::before {
+    transform: translateY(-50%);
+}
+
+.details__title::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.details[open] .details__title::after {
+    transform: translateY(-50%) rotate(0deg);
+    opacity: 0;
+}
+
+/* Эффекты при наведении */
+.details:hover {
+    box-shadow: 0 2px 8px rgba(194, 161, 242, 0.2);
+}
