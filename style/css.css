@@ -17,29 +17,28 @@
 
 .logo {
   font-family: "Forum", serif;
+  font-weight: 400;
   font-size: 40px;
+  line-height: 24px;
+  letter-spacing: 0%;
   color: #3B3B7A;
   text-decoration: none;
-  border: none;
-  background-color: white;
-  cursor: pointer;
 }
 
 .header_LVL1 {
-  margin-left: 50px;
   display: flex;
   align-items: center;
   gap: 25px;
   margin-bottom: 20px;
 }
 
-.header_LVL1 a {
+.header_LVL1_a {
   color: #3B3B7A;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
   display: flex;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .slect {
@@ -81,6 +80,8 @@
 
 .header_up {
   display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .header_bottom {
@@ -109,7 +110,7 @@
   color: #0845E1;
   max-width: 1580px;
   max-height: 450px;
-  background-image: url(../img/banner.jpg);
+  background-image: url(/img/banner.jpg);
   padding: 30px 30px;
   margin-top: 25px;
   border-radius: 20px;
@@ -293,8 +294,11 @@
 }
 
 .floater button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #838FFF;
-  border-color: #838FFF;
+  border-color: transparent;
   border-radius: 20px;
   color: white;
   max-width: 135px;
@@ -303,6 +307,7 @@
   font-weight: 400;
   font-size: 14px;
   padding: 10px 22px;
+  cursor: pointer;
 }
 
 .floater p {
@@ -322,7 +327,7 @@
 }
 
 .infapp {
-  background-image: url(../img/bunapp.png);
+  background-image: url(/img/bunapp.png);
   text-align: center;
   font-family: "Onest", sans-serif;
   font-weight: 300;
@@ -333,10 +338,12 @@
 }
 
 .vote {
-  background-image: url(../img/bacvot.png);
+  background-image: url(/img/bacvot.png);
+  background-repeat: no-repeat;
   border-radius: 20px;
   margin: auto;
   max-height: 643px;
+  padding-bottom: 35px;
 }
 
 .headp {
@@ -425,6 +432,8 @@
   line-height: 100%;
   letter-spacing: 0%;
   margin: 0;
+  color: black;
+  text-decoration: none;
 }
 
 .prodinf {
@@ -470,7 +479,7 @@
   color: #0845E1;
   max-width: 1580px;
   max-height: 450px;
-  background-image: url(../img/bunner2.png);
+  background-image: url(/img/bunner2.png);
   padding: 15px 50px;
   margin-top: 25px;
   border-radius: 20px;
@@ -516,7 +525,7 @@
   padding: 60px 50px;
   border: 1px solid #C5CAE9;
   border-radius: 15px;
-  background-image: url(../img/bunner3.png);
+  background-image: url(/img/bunner3.png);
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
@@ -537,13 +546,13 @@
   width: 980px;
 }
 
+.floater {
+  background-color: #F5F4FA;
+}
 .floaterup {
   display: flex;
-  justify-content: end;
   border-bottom: 1px solid #D0BDF8;
   margin-top: 100px;
-  padding: 80px 200px;
-  background-color: #F5F4FA;
 }
 
 .perentshref {
@@ -616,12 +625,15 @@
 .floaterbotton {
   display: flex;
   justify-content: space-between;
-  background-color: #F5F4FA;
-  padding: 20px 200px;
 }
+.floaterbotton a {
+  margin-top: 15px;
+}
+
 .contfloatertxt {
   display: flex;
 }
-.floatertxt{
- margin-right: 20px;
+
+.floatertxt {
+  margin-right: 20px;
 }
