@@ -21,7 +21,7 @@
   font-size: 40px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #3B3B7A;
+  color: #3b3b7a;
   text-decoration: none;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .header_LVL1_a {
-  color: #3B3B7A;
+  color: #3b3b7a;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -53,7 +53,7 @@
 }
 
 .right_header button {
-  color: #3B3B7A;
+  color: #3b3b7a;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -63,12 +63,12 @@
 }
 
 .backgroundheader_lvl2 {
-  color: #0845E1;
+  color: #0845e1;
   gap: 25px;
   display: flex;
   padding-top: 30px;
   padding-left: 55px;
-  background-color: #EBF0FF;
+  background-color: #ebf0ff;
   border-radius: 20px;
   width: 97%;
   height: 50px;
@@ -94,23 +94,23 @@
   margin-bottom: 30px;
   padding-right: 50px;
   border-right: 1px solid;
-  border-color: #B8C4FF;
+  border-color: #b8c4ff;
 }
 
 .header_bottom a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  color: #1D2035;
+  color: #1d2035;
   margin-left: 75px;
 }
 
 .imgbanner {
   font-family: "Onest", sans-serif;
   font-weight: 300;
-  color: #0845E1;
+  color: #0845e1;
   max-width: 1580px;
   max-height: 450px;
-  background-image: url(img/banner.jpg);
+  background-image: url(/img/banner.jpg);
   padding: 30px 30px;
   margin-top: 25px;
   border-radius: 20px;
@@ -127,7 +127,7 @@
   color: white;
   border: none;
   border-radius: 20px;
-  background-color: #0845E1;
+  background-color: #0845e1;
   cursor: pointer;
 }
 
@@ -167,14 +167,14 @@
   border-radius: 20px;
   width: 480px;
   height: 280px;
-  background-color: #D4EBFF;
+  background-color: #d4ebff;
 }
 
 .headh {
   font-family: "Onest", sans-serif;
   font-weight: 300;
   font-size: 30px;
-  color: #1147D0;
+  color: #1147d0;
   text-align: center;
 }
 
@@ -198,14 +198,13 @@
   font-size: 18px;
   font-weight: 300;
   margin: 0;
-
 }
 
 .block button p:last-child {
   font-family: "Onest", sans-serif;
   font-weight: 300;
   font-size: 14px;
-  color: #0845E1;
+  color: #0845e1;
   display: flex;
   margin: 0;
 }
@@ -220,16 +219,16 @@
   font-family: "Onest", sans-serif;
   font-weight: 300;
   font-size: 40px;
-  color: #1147D0;
+  color: #1147d0;
 }
 
 .docbunup button {
   font-family: "Onest", sans-serif;
   font-weight: 300;
   font-size: 14px;
-  color: #0845E1;
+  color: #0845e1;
   background-color: white;
-  border-color: #0845E1;
+  border-color: #0845e1;
   border-radius: 20px;
   padding: 8px 20px;
   cursor: pointer;
@@ -240,7 +239,7 @@
 }
 
 .bun {
-  border: 1px solid #C5CAE9;
+  border: 1px solid #c5cae9;
   width: 280px;
   height: 330px;
 }
@@ -276,14 +275,14 @@
   font-family: "Onest", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  color: #3562FF;
+  color: #3562ff;
 }
 
 .docworck {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  color: #3B3B7A;
+  color: #3b3b7a;
 }
 
 .floater {
@@ -297,7 +296,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #838FFF;
+  background-color: #838fff;
   border-color: transparent;
   border-radius: 20px;
   color: white;
@@ -327,18 +326,18 @@
 }
 
 .infapp {
-  background-image: url(img/bunapp.png);
+  background-image: url(/img/bunapp.png);
   text-align: center;
   font-family: "Onest", sans-serif;
   font-weight: 300;
   font-size: 30px;
-  color: #0845E1;
+  color: #0845e1;
   padding: 18px;
   margin-top: 30px;
 }
 
 .vote {
-  background-image: url(img/bacvot.png);
+  background-image: url(/img/bacvot.png);
   background-repeat: no-repeat;
   border-radius: 20px;
   margin: auto;
@@ -353,7 +352,7 @@
   font-family: "Onest", sans-serif;
   font-weight: 300;
   font-size: 40px;
-  color: #1147D0;
+  color: #1147d0;
 }
 
 .cvote {
@@ -384,21 +383,21 @@
   font-family: "Onest", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #22272F;
+  color: #22272f;
 }
 
 .infvoitdoc p:last-child {
   font-family: "Onest", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  color: #3562FF;
+  color: #3562ff;
 }
 
 .gradedoc {
   font-family: "Onest", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  color: #22272F;
+  color: #22272f;
 }
 
 .infvoitdocgradedoc {
@@ -443,7 +442,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
-  color: #3B3B7A;
+  color: #3b3b7a;
 }
 
 .prfloater {
@@ -460,7 +459,7 @@
 }
 
 .prbun {
-  border: 1px solid #C5CAE9;
+  border: 1px solid #c5cae9;
   width: 258px;
   height: 315px;
   margin: 10px;
@@ -470,16 +469,16 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding-top: 5px
+  padding-top: 5px;
 }
 
 .imgbanner2 {
   font-family: "Onest", sans-serif;
   font-weight: 300;
-  color: #0845E1;
+  color: #0845e1;
   max-width: 1580px;
   max-height: 450px;
-  background-image: url(img/bunner2.png);
+  background-image: url(/img/bunner2.png);
   padding: 15px 50px;
   margin-top: 25px;
   border-radius: 20px;
@@ -497,7 +496,7 @@
   font-size: 40px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #1147D0;
+  color: #1147d0;
 }
 
 .brendbunup p:last-child {
@@ -506,7 +505,7 @@
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #434E76;
+  color: #434e76;
 }
 
 .brendbun {
@@ -515,7 +514,7 @@
 
 .brebun {
   margin: auto;
-  border: 1px solid #C5CAE9;
+  border: 1px solid #c5cae9;
   width: 280px;
   height: 180px;
   border-radius: 20px;
@@ -523,9 +522,9 @@
 
 .imgbanner3 {
   padding: 60px 50px;
-  border: 1px solid #C5CAE9;
+  border: 1px solid #c5cae9;
   border-radius: 15px;
-  background-image: url(img/bunner3.png);
+  background-image: url(/img/bunner3.png);
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
@@ -539,7 +538,7 @@
   font-size: 35px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #1147D0;
+  color: #1147d0;
 }
 
 .accordeon {
@@ -547,16 +546,16 @@
 }
 
 .floater {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 .floaterup {
   display: flex;
-  border-bottom: 1px solid #D0BDF8;
+  border-bottom: 1px solid #d0bdf8;
   margin-top: 100px;
 }
 
 .perentshref {
-  text-align: start
+  text-align: start;
 }
 
 .textfl p {
@@ -564,7 +563,7 @@
   font-size: 45px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #3B3B7A;
+  color: #3b3b7a;
   margin-bottom: 50px;
 }
 
@@ -584,14 +583,13 @@
   margin-top: 0;
 }
 
-
 .perhref {
   font-family: "Onest", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21.6px;
   letter-spacing: 0%;
-  color: #3B3B7A;
+  color: #3b3b7a;
   text-decoration: none;
 }
 
@@ -601,7 +599,7 @@
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #3B3B7A;
+  color: #3b3b7a;
   text-decoration: none;
 }
 
@@ -619,7 +617,7 @@
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #3B3B7A;
+  color: #3b3b7a;
 }
 
 .floaterbotton {
