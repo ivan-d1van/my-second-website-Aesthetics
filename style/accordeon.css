@@ -8,6 +8,11 @@
     width: 980px;
     overflow: hidden;
 }
+@media (max-width: 900px) {
+  .details {
+    width: 320px;
+}
+}
 
 /* Стили для заголовка */
 .details__title {
