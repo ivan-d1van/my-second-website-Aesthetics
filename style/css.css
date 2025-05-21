@@ -10,6 +10,12 @@
   margin: 0 auto;
 }
 
+.container_min_header_up {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+
 .gap_test {
   gap: 30px;
   display: flex;
@@ -39,17 +45,18 @@
   display: flex;
   white-space: nowrap;
   text-decoration: none;
+  margin-top: 1%;
 }
 
 .slect {
   border: none;
+  margin-top: 1%;
 }
 
 .right_header {
   display: flex;
   align-items: center;
-  margin-top: 2%;
-  margin-left: 45%;
+  margin-bottom: 1%;
 }
 
 .right_header button {
@@ -66,12 +73,12 @@
   color: #0845e1;
   gap: 25px;
   display: flex;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-left: 55px;
   background-color: #ebf0ff;
   border-radius: 20px;
   width: 97%;
-  height: 50px;
+  height: 40px;
 }
 
 .backgroundheader_lvl2 img {
@@ -111,6 +118,7 @@
   max-width: 1580px;
   max-height: 450px;
   background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
   padding: 30px 30px;
   margin-top: 25px;
   border-radius: 20px;
@@ -131,29 +139,89 @@
   cursor: pointer;
 }
 
+/* Wrapper скрывает всё, что выходит за пределы */
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin: 20px 0;
+}
+
+/* Трек с блоками: flex + анимация */
 .infoicon {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  max-width: 1475px;
-  margin: auto;
-  margin-top: 40px;
+  gap: 20px;
+  width: max-content;
+  animation: scroll-carousel 30s linear infinite;
 }
 
+/* Каждый блок */
+.infoiconblock {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 180px;
+}
+
+/* Иконка внутри блока */
+.infoiconblock img {
+  width: 36px;
+  height: 36px;
+}
+
+/* Большая цифра */
 .number {
   font-family: "Onest", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  margin: auto;
+  font-size: 28px;
+  margin: 0;
 }
 
+/* Подпись */
 .undnumber {
   font-family: "Onest", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  margin: auto;
+  font-size: 14px;
+  margin: 0;
+  color: #0845e1;
 }
+
+/* Анимация: смещаем на 50% ширины трека (то есть ровно длину исходных 6 блоков) */
+@keyframes scroll-carousel {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Адаптация под мобильные: уменьшаем размеры иконок и шрифтов */
+@media (max-width: 768px) {
+  .infoicon {
+    gap: 10px;
+    animation-duration: 20s;
+  }
+
+  .infoiconblock {
+    min-width: 140px;
+    gap: 8px;
+  }
+
+  .infoiconblock img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .number {
+    font-size: 20px;
+  }
+
+  .undnumber {
+    font-size: 12px;
+  }
+}
+
 
 .threablock {
   display: flex;
@@ -545,9 +613,10 @@
   width: 980px;
 }
 
-.floater {
+.floater1 {
   background-color: #f5f4fa;
 }
+
 .floaterup {
   display: flex;
   border-bottom: 1px solid #d0bdf8;
@@ -624,6 +693,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .floaterbotton a {
   margin-top: 15px;
 }
@@ -634,4 +704,625 @@
 
 .floatertxt {
   margin-right: 20px;
+}
+
+@media (max-width: 900px) {
+
+  .container_min,
+  .container_max {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .gap_test {
+    gap: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .header_LVL1 {
+    display: contents;
+    margin-bottom: 20px;
+  }
+
+  .right_header {
+    display: none;
+  }
+
+  .hrefheader {
+    display: none;
+  }
+
+  .backgroundheader_lvl2 {
+    color: #0845e1;
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 55px;
+    padding-bottom: 10px;
+    background-color: #ebf0ff;
+    border-radius: 20px;
+    width: 86%;
+    height: 40px;
+  }
+
+  .backgroundheader_lvl2 img {
+    margin-right: 5px;
+  }
+
+  .header_up {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .header_bottom {
+    display: flex;
+    gap: 50px;
+  }
+
+  .stick {
+    font-family: "Onest", sans-serif;
+    margin-bottom: 0px;
+    padding-right: 0px;
+    border-right: 0px solid;
+    border-color: #b8c4ff;
+  }
+
+  .imgbanner {
+    font-family: "Onest", sans-serif;
+    font-weight: 300;
+    color: #0845e1;
+    background-image: url(../img/banner.jpg);
+    padding: 10px 10px;
+    margin-top: 25px;
+    border-radius: 20px;
+  }
+
+  .imgbanner button {
+    margin-top: -5px;
+    margin-left: 160px;
+  }
+
+  .buttonbun {
+    padding: 10px 15px;
+    font-family: "Onest", sans-serif;
+    size: 25px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color: #0845e1;
+    cursor: pointer;
+  }
+
+  .threablock {
+    display: inline;
+    margin: auto;
+    margin-top: 10px;
+    gap: 20px;
+  }
+
+  .block {
+    border-radius: 20px;
+    padding: 3px;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    background-color: #d4ebff;
+  }
+
+  .headh {
+    font-family: "Onest", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #1147d0;
+    text-align: center;
+  }
+
+  .block button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px 35px;
+    border: none;
+    border-radius: 20px;
+    width: 340px;
+    margin: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .block button p:first-child {
+    margin: auto;
+    font-family: "Onest", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .block button p:last-child {
+    font-family: "Onest", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #0845e1;
+    display: flex;
+    margin: 0;
+  }
+
+  .docbunup {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .docbunup p {
+    font-family: "Onest", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #1147d0;
+    margin-bottom: 10px;
+  }
+
+  .docbunup button {
+    font-family: "Onest", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #0845e1;
+    background-color: white;
+    border-color: #0845e1;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    max-width: 100%;
+    width: 400px;
+  }
+
+  .docbun {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+  }
+
+  .bun {
+    border: 1px solid #c5cae9;
+    width: 280px;
+    height: 330px;
+  }
+
+  .docbun div {
+    border-radius: 20px;
+    margin: auto;
+  }
+
+  .headbun {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 15px 15px;
+  }
+
+  .headbun p {
+    margin: 0;
+  }
+
+  .mainbun {
+    text-align: center;
+  }
+
+  .docname {
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: auto;
+  }
+
+  .profdoc {
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #3562ff;
+  }
+
+  .docworck {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #3b3b7a;
+  }
+
+  .floater {
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+  }
+
+  .floater button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #838fff;
+    border-color: transparent;
+    border-radius: 20px;
+    color: white;
+    max-width: 135px;
+    max-height: 38px;
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 22px;
+    cursor: pointer;
+  }
+
+  .floater p {
+    margin: 1px;
+  }
+
+  .conpr p:last-child {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .conpr p:first-child {
+    display: none;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .infapp {
+    background-image: url(../img/bunapp.png);
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Onest", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #0845e1;
+    padding: 18px;
+    margin-top: 30px;
+  }
+
+  .vote {
+    background-image: url(../img/bacvot.png);
+    border-radius: 20px;
+    margin: 1px 1px;
+    padding-bottom: 35px;
+    margin-bottom: 40px;
+    max-height: fit-content;
+  }
+
+  .headp {
+    margin: 50px;
+    padding-top: 40px;
+    text-align: center;
+    font-family: "Onest", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #1147d0;
+  }
+
+  .cvote {
+    display: inline;
+  }
+
+  .blockvoit {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .voteimg img {
+    border-radius: 20px;
+    width: 370px;
+    height: 250px;
+  }
+
+  .votecomdoc {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .infvoitdoc p {
+    margin: auto;
+  }
+
+  .infvoitdoc p:first-child {
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #22272f;
+  }
+
+  .infvoitdoc p:last-child {
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #3562ff;
+  }
+
+  .gradedoc {
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #22272f;
+  }
+
+  .infvoitdocgradedoc {
+    flex-direction: column;
+  }
+
+  .grade button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .grade {
+    margin-left: 145px;
+  }
+
+  .prodbun {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .prodbun div {
+    border-radius: 20px;
+    margin: 10px;
+  }
+
+  .product {
+    font-family: Onest;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+  }
+
+  .prodinf {
+    font-family: Onest;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #3b3b7a;
+  }
+
+  .prfloater {
+    text-align: center;
+  }
+
+  .prodpr {
+    font-family: Onest;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .prbun {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 220px;
+    border: 1px solid #c5cae9;
+    width: 258px;
+    height: 315px;
+    margin: 10px;
+  }
+
+  .shheadbun {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 5px;
+  }
+
+  .imgbanner2 {
+    font-family: "Onest", sans-serif;
+    font-weight: 300;
+    color: #0845e1;
+    max-width: 1580px;
+    max-height: 450px;
+    background-image: url(../img/bunner2.png);
+    padding: 15px 45px;
+    margin-top: 25px;
+    border-radius: 20px;
+  }
+
+  .brendbunup {
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+  }
+
+  .brendbunup p:first-child {
+    margin-bottom: 0;
+    font-family: "Onest", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1147d0;
+  }
+
+  .brendbunup p:last-child {
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #434e76;
+  }
+
+  .brendbun {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mainbun img {
+    width: 140px;
+    height: 90px;
+  }
+
+  .brendbun {
+    display: flex;
+    justify-content: center;
+  }
+
+  .brebun {
+    margin: 5px;
+    border: 1px solid #c5cae9;
+    display: flex;
+    flex-wrap: wrap;
+    width: 140px;
+    height: 90px;
+    border-radius: 20px;
+  }
+
+  .imgbanner3 {
+    padding: 60px 50px;
+    border: 1px solid #c5cae9;
+    border-radius: 15px;
+    background-image: url(../img/bunner3.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  .paccord {
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: "Onest", sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1147d0;
+  }
+
+  .accordeon {
+    width: 980px;
+  }
+
+  .floater1 {
+    background-color: #f5f4fa;
+  }
+
+  .floaterup {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #d0bdf8;
+    margin-top: 100px;
+  }
+
+  .perentshref {
+    text-align: start;
+  }
+
+  .textfl p {
+    font-family: "Forum", serif;
+    font-size: 45px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #3b3b7a;
+    margin-bottom: 50px;
+  }
+
+  .floaterapp {
+    display: inline;
+    margin-top: 20px;
+    width: auto;
+    margin-right: auto;
+  }
+
+  .perentshref {
+    display: flex;
+    align-items: center;
+  }
+
+  .hrefset {
+    margin: 28px;
+    margin-top: 0;
+  }
+
+  .perhref {
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.6px;
+    letter-spacing: 0%;
+    color: #3b3b7a;
+    text-decoration: none;
+  }
+
+  .chhref {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #3b3b7a;
+    text-decoration: none;
+  }
+
+  .blockhr {
+    margin-bottom: 20px;
+  }
+
+  .blockhrch {
+    margin-bottom: 15px;
+  }
+
+  .floaterbotton {
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #3b3b7a;
+  }
+
+  .floaterbotton {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .floaterbotton a {
+    margin-top: 15px;
+  }
+
+  .contfloatertxt {
+    display: flex;
+  }
+
+  .floatertxt {
+    margin-right: 20px;
+  }
+
+  .floaterbotton img {
+    display: none;
+  }
 }
